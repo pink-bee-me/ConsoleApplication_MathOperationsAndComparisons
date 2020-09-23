@@ -20,19 +20,21 @@ namespace ConsoleApplication_MathOperationsAndComparisons
             string userInAndOutProductNumber = Convert.ToString(userInputProduct);
             Console.WriteLine(userInAndOutProductNumber+ "  *  50 =  " + multBy50);
  
-            //.Collect user input number and divide by 25 / return divisable value to console
-            Console.WriteLine("Let's try division,... Please Input a whole number to be divided by 25 : ");
-            int userInputDivision = Convert.ToInt32(Console.ReadLine());
-            string divBy25 = Convert.ToString(userInputDivision / 25);
-            string userInAndOutDivisionNumber = Convert.ToString(userInputDivision);
-            Console.WriteLine(userInAndOutDivisionNumber + "  /  25 =  " + divBy25);
+            //.Collect user input number and adds 25 / return total value to console
+            Console.WriteLine("Let's try Addition. You give me a number, then I will add 25 to it, and give you back the total!\nPlease Input a whole number : ");
+            int userInputAdd= Convert.ToInt32(Console.ReadLine());
+            string add25 = Convert.ToString(userInputAdd + 25);
+            string userInAndOutAddNumber = Convert.ToString(userInputAdd);
+            Console.WriteLine(userInAndOutAddNumber + " +  25 = " + add25);
+              
 
             //collect user input divide by 12.5 / return divisable value to console
-            Console.WriteLine("Let's try division again. This time we will divide by the decimal value of 12.5\nPlease Input a whole number: ");
-            int userInputDivByFloat = Convert.ToInt32(Console.ReadLine());
-            string divByFloat = Convert.ToString(userInputDivByFloat / 12.5F);
-            string userInAndOutDivByFloatNumber = Convert.ToString(userInputDivByFloat);
-            Console.WriteLine(userInAndOutDivByFloatNumber + "  /  12.5 =  " + divByFloat);
+            Console.WriteLine("Let's try division. This time we will divide by the decimal value of 12.5\nPlease Input a number: ");
+           int userInputDivByDecimal = Convert.ToInt32(Console.ReadLine());
+           double divByDecimal= userInputDivByDecimal / 12.5;
+           string answerDivByDecimal = Convert.ToString(divByDecimal);
+           string userInAndOutDivByDecimalNumber = Convert.ToString(userInputDivByDecimal);
+           Console.WriteLine(userInAndOutDivByDecimalNumber + "  /  12.5 =  " + divByDecimal);
 
             //collect user input and check if input is greater than 50 / return  true or false to the console
             Console.WriteLine("Let's try a comparison,...Is your number greater than 50? Let's check! \nPlease Input a number : ");
