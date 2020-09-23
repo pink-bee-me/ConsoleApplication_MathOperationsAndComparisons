@@ -42,6 +42,15 @@ namespace ConsoleApplication_MathOperationsAndComparisons
             bool greaterThan50 = userInputComparison > 50;
             string userInAndOutComparisonNumber = Convert.ToString(userInputComparison);
             Console.WriteLine(userInAndOutComparisonNumber + "  >  50 =  " + greaterThan50);
+           
+
+            // collects user input and divides that number by 7 / returns the remainder to the console / Modulus operator (%)
+            Console.WriteLine("Let's determine if your number, when divided by 7 is left with a remainder. We will use the modulus operator (%) to tell us the value of that remainder. \nPlease Input a number: ");
+            int userInputRemainder = Convert.ToInt32(Console.ReadLine());
+            string divideBy7Remainder = Convert.ToString(userInputRemainder % 7);
+            string divideBy7 = Convert.ToString(userInputRemainder / 7);
+            string userInAndOutRemainderNumber = Convert.ToString(userInputRemainder);
+            Console.WriteLine(userInAndOutRemainderNumber + "  /  7 = " + divideBy7 + "  with a Remainder of  " + divideBy7Remainder);
             Console.ReadLine();
 
         }
